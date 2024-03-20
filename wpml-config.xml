@@ -1,0 +1,5 @@
+<wpml-config>
+  <theme-localization>
+    <languages folder="languages"/>
+  </theme-localization>
+</wpml-config>
