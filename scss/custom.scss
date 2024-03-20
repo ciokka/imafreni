@@ -199,7 +199,9 @@ body {
 					box-shadow: 0 0 0 1px var(--e-global-color-primary);
 				}
 			}
-
+			@media (max-width: 576px) {
+				justify-content: center;
+			}
 		}
 
 	}

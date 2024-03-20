@@ -7973,6 +7973,11 @@ body {
 .prodotti-template-default .carouselIma #customize-thumbnails div.tns-nav-active {
   box-shadow: 0 0 0 1px var(--e-global-color-primary);
 }
+@media (max-width: 576px) {
+  .prodotti-template-default .carouselIma #customize-thumbnails {
+    justify-content: center;
+  }
+}
 
 .box-scheda-materiali .pdfMateriali {
   background-color: #f0f0f0;
