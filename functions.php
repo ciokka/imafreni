@@ -441,3 +441,19 @@ function my_analytics2()
 }
 add_action('wp_head', 'my_analytics2', 21);
 
+// Funzione per aggiungere WP PUSHER nella barra di amministrazione
+function aggiungi_voce_wpadminbar($wp_admin_bar) {
+    // Cambia "Nuova Voce" con il testo desiderato per la tua voce nella barra di amministrazione
+    $wp_admin_bar->add_menu(array(
+        'id' => 'wppusheritem',
+        'title' => 'Aggiorna da GIT Repo',
+        'href' => '/wp-admin/admin.php?page=wppusher-themes',
+        'meta' => array(
+            'title' => 'Per eseguire l\'update del tema dalla repository', // Descrizione opzionale
+        ),
+    ));
+}
+
+// Aggiungi la funzione alla barra di amministrazione
+add_action('admin_bar_menu', 'aggiungi_voce_wpadminbar', 999);
+
